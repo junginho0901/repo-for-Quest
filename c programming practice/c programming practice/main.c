@@ -80,3 +80,10 @@ int main(void)
     return 0;
 }
 */
+#include<stdio.h>
+int main(void)
+{
+    printf("푸시 원활한지ㅡ테스트용 코드");
+    return 0;
+    
+}
