@@ -89,6 +89,7 @@ int main(void)
     
 }
 */
+/*
 #include<stdio.h>
 
 int main(void)
@@ -96,3 +97,4 @@ int main(void)
     printf("새로운 브랜치 생성 후 병합");
     return 0;
 }
+ */
