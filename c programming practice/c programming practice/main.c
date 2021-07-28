@@ -80,4 +80,9 @@ int main(void)
     return 0;
 }
 */
-
+#include<stdio.h>
+int main(void)
+{
+    printf("new_pro 브랜치를 만들어서 코드를 작성 중입니다.\n pull request 를 하면 이 코드가 깃허브에 나올겁니다.");
+    return 0;
+}
