@@ -80,10 +80,19 @@ int main(void)
     return 0;
 }
 */
+/*
 #include<stdio.h>
 int main(void)
 {
     printf("푸시 원활한지ㅡ테스트용 코드");
     return 0;
     
+}
+*/
+#include<stdio.h>
+
+int main(void)
+{
+    printf("새로운 브랜치 생성 후 병합");
+    return 0;
 }
