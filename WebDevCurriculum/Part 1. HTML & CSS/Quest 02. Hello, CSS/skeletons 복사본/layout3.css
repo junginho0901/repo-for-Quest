@@ -19,7 +19,7 @@ body {
 	/* TODO: 이 곳을 채우세요! */
 	width: calc(100% - 500px);
 	height: 100%;
-display: inline-block;
+ display: inline-block;
             margin-right: -4px;
             vertical-align: top;
 }
