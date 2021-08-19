@@ -3,7 +3,7 @@ body {
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 }
@@ -11,6 +11,8 @@ body {
 .contents {
 	/* TODO: 이 곳을 채우세요! */
 	display: flex;
+	max-height: auto;
+    min-height: 100%;
 
 }
 
@@ -33,7 +35,7 @@ body {
 	width: 200px;
         flex-grow: 0;
         flex-shrink: 0;
-	height: auto;
+
 }
 
 .right {
@@ -42,7 +44,7 @@ body {
 	width: 300px;
         flex-grow: 0;
         flex-shrink: 0;
-	height: auto;
+
 }
 
 footer {
