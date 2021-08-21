@@ -10,29 +10,48 @@ body {
 
 .contents {
 	/* TODO: 이 곳을 채우세요! */
+	display: flex;
+	height: 100%;
 }
 
 .main {
 	background-color: skyblue;
 	/* TODO: 이 곳을 채우세요! */
+	position: relative;
+	flex: 1;
 }
 
 .main header {
 	background-color: lightgray;
 	/* TODO: 이 곳을 채우세요! */
+	height: 30px;
+
 }
 
 .left {
 	background-color: pink;
 	/* TODO: 이 곳을 채우세요! */
+	flex-basis: 200px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	overflow: hidden;/* 이걸 쓰면 원래는 넘어가는 내용은 없어져야 근데 멀정하게 남아있음 */
+	padding-bottom: 50px;
 }
 
 .right {
 	background-color: greenyellow;
 	/* TODO: 이 곳을 채우세요! */
+	flex-basis: 300px; /*width랑 다른 */
+	flex-shrink: 0;
+	flex-grow: 0;
+	padding-bottom: 50px;
 }
 
 footer {
 	background-color: yellow;
 	/* TODO: 이 곳을 채우세요! */
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 50px;
 }
