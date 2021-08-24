@@ -8,6 +8,33 @@ html {
 
 body {
 	/* TODO: 어떤 코드가 들어가야 할까요? */
+
+}
+.header-top {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 200px;
+padding-right: 200px;
+background: #171B21;
+display: flex;
+
 }
 
+.header-left{
+display: flex;
+flex-grow:1;
+
+}
+
+.header-left-search{
+display: flex;
+
+}
+
+.header-left-menus{
+ display: flex;
+}
+.header-right{
+ display: flex;
+}
 /* TODO: 또 어떤 코드들이 들어가야 할까요? */
