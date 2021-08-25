@@ -1,199 +1,210 @@
 * {
-	/* TODO: 어떤 코드가 들어가야 할까요? */
+    /* TODO: 어떤 코드가 들어가야 할까요? */
 }
 
 html {
-	/* TODO: 어떤 코드가 들어가야 할까요? */
+    /* TODO: 어떤 코드가 들어가야 할까요? */
 }
 
 body {
-	width: 100%;
-    	height: 100%;
-    	margin: 0;
-    	padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 
 }
+
 a {
- text-decoration: none;
- }
+    text-decoration: none;
+}
+
 .header-top {
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 150px;
-padding-right: 150px;
-background: #171B21;
-display: flex;
-position: relative;
+    padding: 10px 150px;
+    background: #171B21;
+    display: flex;
+    position: relative;
 
 }
 
-.header-left{
-display: flex;
-flex-grow:1;
+.header-left {
+    display: flex;
+    flex-grow: 1;
 
 }
-.button-this-repo{
- border: 0px;
- border-top-left-radius: 4px;
- border-bottom-left-radius: 4px;
- margin-top:5px;
- margin-bottom:5px;
- background-color:#404448;
- color:#BCBFB9;
-}
-.button-search{
-border: 0px;
- border-top-right-radius: 4px;
- border-bottom-right-radius: 4px;
- margin-left: -1px;
-  margin-top:5px;
-  margin-bottom:5px;
-  width: 200px;
-   background-color:#404448;
-   color:#838688;
-}
-.header-left-search{
-display: flex;
-margin-left:8px;
-margin-right:20px;
+
+.button-this-repo {
+    border: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #404448;
+    color: #BCBFB9;
 }
 
-.header-left-menus{
- display: flex;
- width: 350px;
- justify-content: space-between;
- padding-top: 10px;
+.button-search {
+    border: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: -1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
+    background-color: #404448;
+    color: #838688;
 }
-.header-right{
- display: flex;
- width: 100px;
-  justify-content: space-between;
-  padding-top: 10px;
+
+.header-left-search {
+    display: flex;
+    margin-left: 8px;
+    margin-right: 20px;
 }
-.header-links{
-   font-weight: bolder;
-   font-family: 굴림, gulim, sans-serif;
-   font-size: 90%;
-   color: #C6C9CB;
+
+.header-left-menus {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding-top: 10px;
 }
-.main{
+
+.header-right {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+/* 한글 웬만하면 쓰지마라. */
+.header-links {
+    font-weight: bolder;
+    font-family: 굴림, gulim, sans-serif;
+    font-size: 90%;
+    color: #C6C9CB;
+}
+
+.main {
 
 }
-.main-header{
-padding-left: 150px;
-padding-right: 150px;
-padding-top: 20px;
-background-color: #FAFBFC;
-border-style:solid;
-border-width: 0 0 1px; 0;
-border-color: #AEB1B4;
+
+.main-header {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    background-color: #FAFBFC;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #AEB1B4;
 }
-.main-header-top
-{
-display: flex;
+
+.main-header-top {
+    display: flex;
 }
-.main-header-left
-{
-display: flex;
-flex-grow:1;
-margin-top: 10px;
-margin-bottom:10px;
+
+.main-header-left {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.user-id{
-font-family: 굴림, gulim, sans-serif;
-margin-right:3px;
-color:#2768CF;
+
+.user-id {
+    font-family: 굴림, gulim, sans-serif;
+    margin-right: 3px;
+    color: #2768CF;
 }
-.repo-name{
-font-weight: bold;
-font-family: 굴림, gulim, sans-serif;
-margin-left:3px;
-color:#2768CF;
+
+.repo-name {
+    font-weight: bold;
+    font-family: 굴림, gulim, sans-serif;
+    margin-left: 3px;
+    color: #2768CF;
 }
-.button-left{
-line-height: 25px;
-border-style: solid;
-border-width:1px;
-border-color: #C8CBCD;
-border-top-left-radius: 3px;
- border-bottom-left-radius: 3px;
- margin-right:-2px;
-background-color: #FAFBFC;
+
+.button-left {
+    line-height: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C8CBCD;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-right: -2px;
+    background-color: #FAFBFC;
 
 }
-.button-right{
-line-height: 25px;
-border-style: solid;
-border-width:1px;
-border-color: #C8CBCD;
- border-top-right-radius: 3px;
- border-bottom-right-radius: 3px;
- margin-left: -2px;
-background-color: #FAFBFC;
- padding-top:2px;
- padding-bottom:3px;
+
+.button-right {
+    line-height: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C8CBCD;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-left: -2px;
+    background-color: #FAFBFC;
+    padding-top: 2px;
+    padding-bottom: 3px;
 }
-.main-header-menu{
-margin-bottom:0px;
+
+.main-header-menu {
+    margin-bottom: 0px;
 }
-.main-header-menu-buttons{
-border-width: 0 0 1px 0;
-border-style: solid;
-border-color: #AEB1B4;
-background-color:#FAFBFC;
-color:#B7B8BB;
-margin-bottom:-1px;
-font-size: 1rem;
-margin-left:1px;
-margin-right:1px;
-font-weight: 400;
-padding-top: 7px;
-padding-bottom: 7px;
-padding-left: 20px;
-padding-right: 20px;
+
+.main-header-menu-buttons {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #AEB1B4;
+    background-color: #FAFBFC;
+    color: #B7B8BB;
+    margin-bottom: -1px;
+    font-size: 1rem;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-weight: 400;
+    padding: 7px 20px;
 
 }
-.main-header-menu-buttons:active{
-border-top: 3.5px solid #D4692B;
-border-left: 1px solid #AEB1B4;
-border-right: 1px solid #AEB1B4;
-border-bottom: 0px;
-background-color:#FFFFFF;
-color:#262A2E;
-border-top-left-radius: 3px;
-border-top-right-radius: 3px;
-margin-bottom:-1px;
-margin-top: -2px;
-margin-left: 0px;
-margin-right: 0px;
-}
-.contents{
-margin-left: 150px;
-margin-right: 150px;
-}
-footer{
 
-display:flex;
-margin-left: 150px;
-margin-right: 150px;
+.main-header-menu-buttons:active {
+    border-top: 3.5px solid #D4692B;
+    border-left: 1px solid #AEB1B4;
+    border-right: 1px solid #AEB1B4;
+    border-bottom: 0;
+    background-color: #FFFFFF;
+    color: #262A2E;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin: -2px 0 -1px;
 }
-.foot
-{
-width: calc(100% - 300px);
-display:flex;
-position:absolute;
-bottom:20px;
-justify-content: space-between;
+
+.contents {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+footer {
+
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.foot {
+    width: calc(100% - 300px);
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    justify-content: space-between;
 
 }
-.foot-left{
-display:flex;
-width: 35%;
-justify-content: space-between;
+
+.foot-left {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
 }
-.foot-right{
-display:flex;
-width: 35%;
-justify-content: space-between;
+
+.foot-right {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
 }
-/* TODO: 또 어떤 코드들이 들어가야 할까요? */
