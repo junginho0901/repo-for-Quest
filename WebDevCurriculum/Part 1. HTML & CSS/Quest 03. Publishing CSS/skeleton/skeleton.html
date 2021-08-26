@@ -10,7 +10,7 @@
 		<!-- TODO: Quest 1에서 완성한 HTML을 바탕으로 필요한 부분을 수정해 보세요 -->
 		<header class="header-top">
 			<article class="header-left">
-				<a href="https://github.com"><img class="header-gitimage" src="./mark-github.pdf"style="width:40px; height:40px;"></a>
+				<a href="https://github.com"><img class="header-gitimage" src="./mark-github.pdf"style="width:40px; height:40px;" alt=""></a>
 
 				<div class="header-left-search">
 					<input class="button-this-repo" type="button" value="This Repository"/>
@@ -41,13 +41,14 @@
 				</article>
 				<article class="main-header-right">
 					<a><input class="button-left" type="button" value="Unwatch"></a>
-					<label><input class="button-right" type="text" value="19"/></label>
+					<label><input class="button-right" type="text" readonly value="19"/></label>
 
 					<a><input class="button-left" type="button" value="Star"></a>
-					<label><input class="button-right" type="text" value="113"/></label>
+					<label><input class="button-right" type="text" readonly value="113"/></label>
 
 					<a><input class="button-left" type="button" value="Fork"></a>
-					<label><input class="button-right" type="text" value="106"/></label>
+					<label><input class="button-right" type="text" readonly value="106"/></label>
+
 				</article>
 			</article>
 
@@ -59,34 +60,62 @@
 				<a><input class="main-header-menu-buttons" type="button" value="Insights"></a>
 			</article>
 		</header>
+
 		<div class="contents">
-			KnowRe web development curriculum for noobs
-			<article class="contents-Top">
-				<label><input type="text" value="44"/></label>
-				<a><input type="button" value="commits"></a>
-				<label><input type="text" value="1"/></label>
-				<a><input type="button" value="branch"></a>
-				<label><input type="text" value="0"/></label>
-				<a><input type="button" value="releases"></a>
-				<label><input type="text" value="2"/></label>
-				<a><input type="button" value="contributors"></a>
-				<a><input type="button" value="MIT"></a>
-			</article>
+			<div class="repo-info">
+				KnowRe web development curriculum for noobs
+			</div>
+			<div class="content-box">
+				<article class="contents-Top">
+				<span class="contents-Top-box">
+					<label><input class="contents-Top-texts" type="text" readonly value="44"/></label>
+					<a><input class="contents-Top-buttons" type="button" value="commits"></a>
+				</span>
+
+					<span class="contents-Top-box">
+					<label><input class="contents-Top-texts" type="text" readonly value="1"/></label>
+					<a><input class="contents-Top-buttons" type="button" value="branch"></a>
+				</span>
+
+					<span class="contents-Top-box">
+					<label><input class="contents-Top-texts" type="text" readonly value="0"/></label>
+					<a><input class="contents-Top-buttons" type="button" value="releases"></a>
+				</span>
+
+
+					<span class="contents-Top-box">
+					<label><input class="contents-Top-texts" type="text" readonly value="2"/></label>
+					<a><input class="contents-Top-buttons" type="button" value="contributors"></a>
+				</span>
+
+					<span class="contents-Top-box">
+					<a><input class="contents-Top-buttons" type="button" value="MIT"></a>
+				</span>
+				</article>
+				<div class="color-box">
+					<div class="red-box"></div>
+					<div class="yellow-box"></div>
+					<div class="purple-box"></div>
+				</div>
+			</div>
+
+
 			<article class="contents-buttons">
 				<div class="contents-buttons-left">
 					<a><input type="button" value="Branch:master"></a>
 					<a><input type="button" value="New Pull request"></a>
 				</div>
 				<div class="contents-buttons-right">
-					<a><input type="button" value="Create new file"></a>
+					<a><input class="contents-buttons-right-left" type="button" value="Create new file"></a>
 					<a><input type="button" value="Upload files"></a>
-					<a><input type="button" value="Find file"></a>
-					<a><input type="button" value="Clone or download"></a>
+					<a><input class="contents-buttons-right-right" type="button" value="Find file"></a>
+
 				</div>
+				<a><input class="contents-green-button" type="button" value="Clone or download"></a>
 			</article>
 			<article class="contents-repo">
 				<div class="repo-top">
-					<span id="repo-info-left">KnoeRe Quest 02 added constraint</span>
+					<span id="repo-info-left">KnowRe Quest 02 added constraint</span>
 					<span id="repo-info-right">Latest commit 8a3080e on 7 Aug 2016</span>
 				</div>
 				<div class="repo-file(1)">
@@ -111,7 +140,7 @@
 				<a href="">Status</a>
 				<a href="">Help</a>
 			</article>
-			<a href="https://github.com"><img class="footer-gitimage" src="./mark-github.pdf"style="width:20px; height:20px;"></a>
+			<a href="https://github.com"><img class="footer-gitimage" src="./mark-github.pdf"style="width:20px; height:20px;" alt=""></a>
 			<article class="foot-right">
 				<a href="">Contact GitHub</a>
 				<a href="">API</a>
