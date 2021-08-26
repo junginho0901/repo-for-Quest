@@ -419,11 +419,35 @@ display:flex;
 justify-content: space-between;
 border-width:1px;
 border-color:#BACDE6;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
 border-style:solid;
-padding-top: 10px;
-padding-bottom:10px;
+padding-top: 15px;
+padding-bottom:15px;
 padding-left:8px;
 padding-right:8px;
 background-color:#F2F8FE;
+
 }
+.repo-top-id{
+color:#303A43;
+font-family: 굴림, gulim, sans-serif;
+font-weight:600;
+font-size:90%;
+}
+#repo-info-left
+{
+color:#727981;
+font-family: 굴림, gulim, sans-serif;
+font-weight:300;
+font-size:90%;
+}
+#repo-info-right
+{
+color:#727981;
+font-family: 굴림, gulim, sans-serif;
+font-weight:300;
+font-size:90%;
+}
+
 /* TODO: 또 어떤 코드들이 들어가야 할까요? */
