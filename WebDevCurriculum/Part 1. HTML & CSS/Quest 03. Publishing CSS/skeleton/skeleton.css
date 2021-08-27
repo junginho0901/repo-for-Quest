@@ -15,6 +15,7 @@ body {
 }
 a {
  text-decoration: none;
+ color:#366FC8;
  }
 .header-top {
 padding-top: 10px;
@@ -72,6 +73,7 @@ margin-right:20px;
  width: 350px;
  justify-content: space-between;
  padding-top: 10px;
+ color: white;
 }
 .header-right{
  display: flex;
@@ -282,28 +284,7 @@ background-color:#EFDF70;
 flex-grow:3;
 background-color:#524078;
 }
-footer{
-margin-left: 150px;
-margin-right: 150px;
 
-}
-.foot
-{
-display:flex;
-flex-grow:1;
-justify-content: space-between;
-border-top:1px solid #AEB1B4;
-}
-.foot-left{
-display:flex;
-width: 35%;
-justify-content: space-between;
-}
-.foot-right{
-display:flex;
-width: 35%;
-justify-content: space-between;
-}
 .contents-buttons
 {
 padding-top:25px;
@@ -428,6 +409,7 @@ padding-left:8px;
 padding-right:8px;
 background-color:#F2F8FE;
 
+
 }
 .repo-top-id{
 color:#303A43;
@@ -448,6 +430,119 @@ color:#727981;
 font-family: 굴림, gulim, sans-serif;
 font-weight:300;
 font-size:90%;
+}
+.repo-file
+{
+display:flex;
+border-width:0 1px 1px 1px;
+border-color:#ECEDF1;
+border-style:solid;
+padding-top: 15px;
+padding-bottom:15px;
+padding-left:8px;
+padding-right:8px;
+}
+.repo-file:hover
+{
+display:flex;
+border-width:0 1px 1px 1px;
+border-color:#ECEDF1;
+border-style:solid;
+padding-top: 15px;
+padding-bottom:15px;
+padding-left:8px;
+padding-right:8px;
+background-color:#F6F8FA;
+}
+.repo-file span{
+color:#727981;
+font-family: 굴림, gulim, sans-serif;
+}
+.repo-file a span
+{
+color:#2969D4;
+font-weight:300;
+font-size:100%;
+}
+.repo-file a span:hover{
+color:#2969D4;
+font-weight:300;
+font-size:100%;
+text-decoration-line: underline;
+}
+.repo-file-name
+{
+flex-basis:45%;
+}
+.repo-file-commit-name
+{
+flex-grow:1;
+}
+.repo-file-commit-date
+{
+margin-right:0;
+}
+#repo-file-2
+{
+border-bottom-left-radius:4px;
+border-bottom-right-radius:4px;
+}
+.repo-file-text
+{
+margin-top: 20px;
+margin-bottom:20px;
+border-width:1px;
+border-color:#ECEDF1;
+border-style:solid;
+border-radius: 4px;
+}
+.repo-file-text-name
+{
+border-width:0 0 1px 0;
+border-color:#ECEDF1;
+border-style:solid;
+background-color:#F6F8FA;
+padding:10px;
+}
+.repo-file-main-text
+{
+margin-top:30px;
+margin-bottom:30px;
+margin-left:50px;
+margin-right:50px;
+padding-bottom:10px;
+border-width:0 0 1px 0;
+border-color:#ECEDF1;
+border-style:solid;
+font-family: 굴림, gulim, sans-serif;
+font-weight:500;
+font-size:200%;
+}
+
+
+
+footer{
+margin-left: 150px;
+margin-right: 150px;
+position:absolute;
+bottom:20px;
+width: calc(100% - 300px);
+}
+.foot
+{
+display:flex;
+justify-content: space-between;
+border-top:1px solid #AEB1B4;
+}
+.foot-left{
+display:flex;
+width: 35%;
+justify-content: space-between;
+}
+.foot-right{
+display:flex;
+width: 35%;
+justify-content: space-between;
 }
 
 /* TODO: 또 어떤 코드들이 들어가야 할까요? */
