@@ -216,10 +216,11 @@ background-color:#FFFFFF;
 color:#262A2E;
 border-top-left-radius: 3px;
 border-top-right-radius: 3px;
-margin-bottom:-1px;
 margin-top: -2px;
 margin-left: 0px;
 margin-right: 0px;
+position:relative;
+bottom:-0.5px;
 }
 .contents{
 margin-left: 150px;
