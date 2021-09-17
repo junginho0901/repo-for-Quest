@@ -1,1 +1,30 @@
 /* TODO: 자유롭게 바탕화면 시스템의 CSS를 만들어 보세요! */
+.Folder{
+color:#7CCEFB;
+}
+.Icon{
+color:#3C3F41;
+}
+.Window{
+border-width:1px;
+border-top-width:30px;
+border-style:solid;
+border-color:gray;
+width: 500px;
+height:300px;
+border-radius: 4px;
+}
+#Window1{
+display:none;
+background-color:black;
+position:absolute;
+top:30%;
+left:30%;
+}
+#Window2{
+display:none;
+background-color:white;
+position:absolute;
+top:35%;
+left:35%;
+}
