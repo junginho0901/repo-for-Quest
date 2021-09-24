@@ -1,15 +1,38 @@
 class Desktop {
-	/* TODO: Desktop 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
-};
+    // 프로그램을 실행시켰을때 바탕화면의 기초 세팅을 하기위해서
+    #dom
+    #icon
+    constructor() {
+        this.#rendering();
 
+    }
+    // 화면에 출력해 주는 것
+    #rendering() {
+        // 렌더링 로직
+
+    }
+}
+
+// 아이콘의 기능이 뭘까?: 드래그
 class Icon {
-	/* TODO: Icon 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
-};
+    #dom
+    constructor() {
+
+    }
+
+    rendering() {
+
+    }
+
+    Drag() {
+
+    }
+}
 
 class Folder {
-	/* TODO: Folder 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
-};
+    #dom
+}
 
 class Window {
-	/* TODO: Window 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
-};
+    #dom
+}
