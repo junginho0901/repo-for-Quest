@@ -1,1 +1,41 @@
-/* TODO: 자유롭게 바탕화면 시스템의 CSS를 만들어 보세요! */
+
+body {
+    background-image: url('./10-12.jpg');
+    	height: 100vh;
+        background-repeat : no-repeat;
+        background-size : cover;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-image: url('./icon.png');
+    background-size : cover;
+}
+.forder{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-image:url('./forder.png');
+    background-size : cover;
+}
+.window{
+    width: 400px;
+    height: 250px;
+    position:absolute;
+    background-color: white;
+    top: 100px;
+    left: 400px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: relative;
+}
+.Closebutton{
+    position:absolute;
+    top :0;
+    right:0;
+    background-color: red;
+    border-radius: 1px;
+}
