@@ -2,14 +2,15 @@ class Desktop {
     // 프로그램을 실행시켰을때 바탕화면의 기초 세팅을 하기위해서
     #dom
     #icon
-    constructor() {
-        this.#rendering();
-
+	#Forder
+    constructor(icon,forder) {
+        this.#rendering(icon,forder);
+		this.forder=forder;
+		this.icon=icon;
     }
     // 화면에 출력해 주는 것
-    #rendering() {
+    #rendering(icons,forders) {
         // 렌더링 로직
-
     }
 }
 
@@ -17,7 +18,8 @@ class Desktop {
 class Icon {
     #dom
     constructor() {
-
+		this.rendering();
+		this.Drag();
     }
 
     rendering() {
@@ -31,8 +33,25 @@ class Icon {
 
 class Folder {
     #dom
+	#Window
+	constructor(){
+		this.Drag();
+		this.OpenWindow();
+	}
+	Drag() {
+
+	}
+	OpenWindow(){
+
+	}
 }
 
 class Window {
     #dom
+	constructor(){
+		this.Drag();
+	}
+	Drag(){
+
+	}
 }
