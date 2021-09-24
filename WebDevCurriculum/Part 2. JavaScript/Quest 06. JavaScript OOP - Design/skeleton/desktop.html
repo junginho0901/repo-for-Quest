@@ -4,26 +4,28 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="./desktop.css">
 		<script src="./desktop.js"></script>
-		<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 	</head>
 	<body>
 		<section class="desktop">
-			<div class="Folder" id="Folder1">
-				<i class="fas fa-folder fa-5x"></i>
+			<div id="icon1" class="icon"></div>
+			
+			<div id="forder1" class="forder">
+				<div id="window1" class="window">
+					<button id="window1CloseButton" class="Closebutton">x</button>
+				</div>
 			</div>
-			<div class="Window" id="Window1"></div>
-			<div class="Folder" id="Folder2">
-				<i class="fas fa-folder fa-5x"></i>
-			</div>
-			<div class="Window" id="Window2"></div>
-			<div class="Icon" id="Icon1">
-				<i class="fab fa-apple fa-5x"></i>
-			</div>
-		</section>
 
+			<div id="forder2" class="forder">
+				<div id="window2" class="window">
+					<button id="window1CloseButton" class="Closebutton">x</button>
+				</div>
+			</div>
+
+
+		</section>
 		<script>
 			let myDesktop = new Desktop(
-				
+				/* TODO: myDesktop 인스턴스의 생성자의 변수로 무엇이 들어가야 할까요? */
 			);
 		</script>
 	</body>
