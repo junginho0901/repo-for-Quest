@@ -39,7 +39,7 @@ class Folder extends Icon{
 	#Window
 	constructor(){
 		this.OpenWindow();
-		super.Drag();
+		super.Drag();//드레그의 함수는 공통이므로 상속을 이용해서 따로 메소드를 선언하지 않고 사용.
 	}
 
 	OpenWindow(){
