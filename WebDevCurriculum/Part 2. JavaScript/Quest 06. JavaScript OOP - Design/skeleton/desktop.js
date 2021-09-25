@@ -34,16 +34,14 @@ class Icon {
     }// 드래그 했을 때, 아이콘이 따라 움직여야함.
 }
 
-class Folder {
+class Folder extends Icon{
     #dom
 	#Window
 	constructor(){
-		this.Drag();
 		this.OpenWindow();
+		super.Drag();
 	}
-	Drag() {
 
-	}//위의 드래그 함수와 동일 하므로 클래스 합성,함수 합성,클래스 상속 등의 방법으로 코드를 줄여줘야함.
 	OpenWindow(){
 
 	}//폴더 아이코을 더블 클릭 했을 시 보이지 않던 Window가 생겨야 함.(template 속성은 js에서 건들기 전엔 안보임?없음?)
