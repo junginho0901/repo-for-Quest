@@ -31,33 +31,32 @@ class Icon {
     #dom
     constructor() {
 		this.#rendering();
-		this.drag;
+		this.drag= new Drag();//드래그 클래스의 객체를 만들어서 각각의 클래스에 넣음-클래스 합성
     }
     #rendering(){
 
     }//아이콘의 설정 
-	drag = new Drag();//드래그 클래스의 객체를 만들어서 각각의 클래스에 넣음-클래스 합성
+	
 }
+
 class Folder{
     #dom
-	#Window
+	#Window//윈도우를 연결해서 폴더 더블클릭 시 윈도우가 열리게
 	constructor(){
 		this.#OpenWindow();
-		this.drag;
+		this.drag= new Drag()
 	}
-	drag=new Drag();
 	#OpenWindow(){
 
-	}//폴더 아이코을 더블 클릭 했을 시 보이지 않던 Window가 생겨야 함.(template 속성은 js에서 건들기 전엔 안보임?없음?)
+	}//폴더 아이콘을 더블 클릭 했을 시 보이지 않던 Window가 생겨야 함.(template 속성은 js에서 건들기 전엔 안보임?없음?)
 }
 
 class Window {
     #dom
 	constructor(){
-		this.drag;
+		this.drag= new Drag()
 		this.#CloseWindow();
 	}
-	drag=new Drag();
 	
 	#CloseWindow(){
 
