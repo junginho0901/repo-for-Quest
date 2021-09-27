@@ -24,7 +24,6 @@ class Drag{
 	dragfunc(){
 
 	}
-	mousepoint;
 }
 
 // 아이콘의 기능이 뭘까?: 드래그
@@ -37,7 +36,7 @@ class Icon {
     #rendering(){
 
     }//아이콘의 설정 
-	drag = new Drag();
+	drag = new Drag();//드래그 클래스의 객체를 만들어서 각각의 클래스에 넣음-클래스 합성
 }
 class Folder{
     #dom
@@ -62,5 +61,5 @@ class Window {
 	
 	#CloseWindow(){
 
-	}//Window를 없애는 함수를 만들어야함.
+	}//버튼x를 누르면 Window를 없애는 함수를 만들어야함.
 }
