@@ -7,7 +7,7 @@ class Desktop {
 		this.folder=folder;
 		this.icon=icon;
         this.#rendering(icon,folder);
-    }//아이콘 폴더의 개수를 생성자로 받아서 rendering에 넣고 실행.
+    }//아이콘 폴더의 개수를 생성자로 받아서 rendering에 넣고 실행. for 문으로 객체 생성?
     // 화면에 출력해 주는 것
     #rendering(icons,folders) {
         // 렌더링 로직
@@ -16,33 +16,38 @@ class Desktop {
 		this.#Folder=new Folder();
     }
 }
+class Drag{
+	// 드래그 기능 클래스를 따로 만듬
+	constructor(){
+		this.dragfunc();
+	}
+	dragfunc(){
+
+	}
+	mousepoint;
+}
 
 // 아이콘의 기능이 뭘까?: 드래그
 class Icon {
     #dom
     constructor() {
-		this.rendering();
-		this.Drag();
+		this.#rendering();
+		this.drag;
     }
-
-    rendering() {
+    #rendering(){
 
     }//아이콘의 설정 
-
-    Drag() {
-
-    }// 드래그 했을 때, 아이콘이 따라 움직여야함.
+	drag = new Drag();
 }
-
-class Folder extends Icon{
+class Folder{
     #dom
 	#Window
 	constructor(){
-		this.OpenWindow();
-		super.Drag();//드레그의 함수는 공통이므로 상속을 이용해서 따로 메소드를 선언하지 않고 사용.
+		this.#OpenWindow();
+		this.drag;
 	}
-
-	OpenWindow(){
+	drag=new Drag();
+	#OpenWindow(){
 
 	}//폴더 아이코을 더블 클릭 했을 시 보이지 않던 Window가 생겨야 함.(template 속성은 js에서 건들기 전엔 안보임?없음?)
 }
@@ -50,13 +55,12 @@ class Folder extends Icon{
 class Window {
     #dom
 	constructor(){
-		this.Drag();
-		this.CloseWindow;
+		this.drag;
+		this.#CloseWindow();
 	}
-	Drag(){
-
-	}//위와 마찬가지
-	CloseWindow(){
+	drag=new Drag();
+	
+	#CloseWindow(){
 
 	}//Window를 없애는 함수를 만들어야함.
 }
