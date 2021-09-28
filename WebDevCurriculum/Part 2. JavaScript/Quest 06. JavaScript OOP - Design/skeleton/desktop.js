@@ -12,8 +12,9 @@ class Desktop {
     #rendering(icons,folders) {
         // 렌더링 로직
 		//각각 아이콘과 폴더의 개수를 받은만큼 객체를 만들어 내는 항수 기능.
-		this.#icon=new Icon();
-		this.#Folder=new Folder();
+		
+		this.#icon=new Icon(this.icon);
+		this.#Folder=new Folder(this.folder);
     }
 }
 class Drag {
