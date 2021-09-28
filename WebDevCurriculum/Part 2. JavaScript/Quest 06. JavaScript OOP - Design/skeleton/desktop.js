@@ -16,12 +16,12 @@ class Desktop {
 		this.#Folder=new Folder();
     }
 }
-class Drag{
-	// 드래그 기능 클래스를 따로 만듬
+class Drag {
+	// 드래그 기능 클래스를 따로 만들어서 드래그 기능이 필요한 각 클래스에 객체를 생성(합성)
 	constructor(){
-		this.dragfunc();
+		this.dragFunc();
 	}
-	dragfunc(){
+	dragFunc(){
 
 	}
 }
@@ -43,10 +43,10 @@ class Folder{
     #dom
 	#Window//윈도우를 연결해서 폴더 더블클릭 시 윈도우가 열리게
 	constructor(){
-		this.#OpenWindow();
+		this.#openWindow();
 		this.drag= new Drag()
 	}
-	#OpenWindow(){
+	#openWindow(){
 
 	}//폴더 아이콘을 더블 클릭 했을 시 보이지 않던 Window가 생겨야 함.(template 속성은 js에서 건들기 전엔 안보임?없음?)
 }
@@ -55,10 +55,10 @@ class Window {
     #dom
 	constructor(){
 		this.drag= new Drag()
-		this.#CloseWindow();
+		this.#closeWindow();
 	}
 	
-	#CloseWindow(){
+	#closeWindow(){
 
 	}//버튼x를 누르면 Window를 없애는 함수를 만들어야함.
 }
