@@ -6,9 +6,23 @@
 		<script src="./desktop.js"></script>
 	</head>
 	<body>
-		<section class="desktop">
-		</section>
-
+		<div class="monitor">
+			<template class=desktops>
+				<div class="desktop" id="desktop1"></div>
+				<div class="desktop" id="desktop2"></div>
+			</template>
+		</div>
+		<template class="template-icon">
+			<div class="icon" id="icon1"></div>
+		</template>
+		<template class="template-forder">
+			<div class="forder" id="forder1"></div>
+		</template>
+		<template class="template-window">
+			<div class="window" id="window1"></div>
+		</template>
+		
+	
 		<script>
 			let myDesktop = new Desktop(
 				/* TODO: myDesktop 인스턴스의 생성자의 변수로 무엇이 들어가야 할까요? */
