@@ -1,63 +1,89 @@
 
 class Desktop {
-	/* TODO: Desktop 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
 	#dom
-	#Icon
-	#Folder
-	desktops
-	constructor(folders,icons){
-		this.desktops=prompt("데스크탑의 개수를 입력해주세요.");
-		this.Makedsktop(this.desktops);
-		this.#rendering(folders,icons);
-	}
-	
-	#rendering(fold,icn)
-	{
-		
-		for(i=0;i<fold;i++)
-		{
-			//설정한 폴더 개수만큼 객체 생성
+	#icons
+	#folders
+	constructor(dom, initIcon) {
+		this.#dom = dom;
 
+		this.#icons = [];
+		this.#folders = [];
+		this.icon = null;
+
+		for(let i = 0 ; i<initIcon.icon; i++) {
+			this.icon = new Icon();
 		}
-		for(i=0;i<icn;i++)
-		{
-			//설정한 아이콘 개수만큼 객체 생성
-		}
-	}
-	Makedsktop(num) {
-		if(num>2)
-		{
-			alert('데스크탑이 너무 많습니다.');
-		}
-		else if (num<=0) 
-		{
-			alert('데스크탑 개수가 올바르지 않습니다.')
-		}
-		else
-		{
-			for(i=0;i<num;i++)
-			{
-			//데스크탑 생성
-			}
-			if(num===2)
-			{
-				//화면을 브라우저 5:5로 맞추고 데스크탑 2개 생성 css 변경
-			}
-		}
-		
+
+
 	}
 
+	newIcon() {
+
+	}
 }
 
 
 class Icon {
-	/* TODO: Icon 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
-};
+	#dom
+	constructor() {
+
+	}
+
+	getDom() {
+		return this.#dom;
+	}
+
+	moveIcon(coord) {
+		this.#dom.style.left = `${coord.x}px`
+		this.#dom.style.top = `${coord.y}px`
+	}
+
+	prepareDom() {
+		const t = document.querySelector('.template-icon');
+		const tmpl = document.importNode(t.content, true);
+		this.#dom = tmpl.querySelector('.icon');
+	}
+
+}
 
 class Folder {
-	/* TODO: Folder 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
-};
+	#dom
+	constructor() {
+
+	}
+	getDom() {
+		return this.#dom;
+	}
+
+	moveIcon(coord) {
+		this.#dom.style.left = `${coord.x}px`
+		this.#dom.style.top = `${coord.y}px`
+	}
+
+	prepareDom() {
+		const t = document.querySelector('.template-icon');
+		const tmpl = document.importNode(t.content, true);
+		this.#dom = tmpl.querySelector('.icon');
+	}
+}
 
 class Window {
-	/* TODO: Window 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
-};
+	#dom
+	#xbox
+	constructor(dom) {
+
+	}
+
+	getDom() {
+		return this.#dom;
+	}
+}
+
+
+function plus(arr) {
+	return arr.reduce((acc, curr) => { return acc+curr });
+}
+
+function main() {
+	const arr = [1,2,3,4,5,6,7,8,9,10];
+}
