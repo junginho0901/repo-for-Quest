@@ -10,7 +10,6 @@ body.style.backgroundColor="white";}})}
 
 
 
-
 function changeValue(button,body){
     if(button.value=='시작')
     {button.value="종료";
