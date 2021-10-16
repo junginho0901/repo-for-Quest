@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./Car.css">
-    
+    <title>자동차 프로그램</title>
+    <script src="Car.js"></script>
 </head>
 
-<body id="BodyId">
-    <input id="startButton" type="button" value="시동켜기">
-        <input id="offButton" type="button" value="시동끄기">
-        <input id="gasPedal" type="button" value="엑셀">
-        <input id="break" type="button" value="브레이크">
-        <input id="oiling" type="button" value="주유">
-   
-        <script type="text/javascript" src="Car.js">
-              
-        </script>
-      
+<body class="BodyId">
+    <input class="startButton" type="button" value="시동 켜기">
+    <input class="gasPedal" type="button" value="엑셀">
+    <input class="break" type="button" value="브레이크">
+    <input class="oiling" type="button" value="주유">
+
+<script>
+    new Car(document.querySelector('.BodyId'));
+</script>
 </body>
 
 </html>
