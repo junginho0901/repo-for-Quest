@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Car.css">
+    <title>자동차 프로그램</title>
+    <script src="Car.js"></script>
+</head>
+
+<body class="BodyId">
+    <input class="startButton" type="button" value="시동 켜기">
+    <input class="gasPedal" type="button" value="엑셀">
+    <input class="break" type="button" value="브레이크">
+    <input class="oiling" type="button" value="주유">
+
+<script>
+    
+    
+    function MakeCar(){
+        const carObject=prompt('만들 차 종류를 입력하세요(휘발유차, 전기차, 경유차');
+        if(carObject==='전기차')
+        {
+            new electricCar(document.querySelector('.BodyId'));
+        }
+        else if(carObject==='휘발유차')
+        {
+            new petrolCar(document.querySelector('.BodyId'));
+        }
+        else if(carObject==='경유차')
+        {
+            new dieselCar(document.querySelector('.BodyId'));
+        }
+        else{
+            alert("차의 종류가 잘 못 되었습니다. 다시 입력해 주세요");
+            MakeCar();
+        }
+    }
+    MakeCar();
+</script>
+</body>
+
+</html>

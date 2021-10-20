@@ -1,0 +1,17 @@
+#startButton{
+    visibility: visible;
+}
+
+
+.gasPedal {
+
+    visibility: hidden;
+}
+
+.break {
+    visibility: hidden;
+}
+
+.oiling {
+    visibility: hidden;
+}
