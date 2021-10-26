@@ -135,7 +135,7 @@ class electricCar extends Car{
     pushBreakPedal(){
         this.body.querySelector('.break').addEventListener('click', () => {
             if(this.oil<=0){
-                console.log("기름이 없습니다.차가 멈춥니다.");
+                console.log("배터리가 없습니다.차가 멈춥니다.");
                 this.km=0;
                 return;
             }
