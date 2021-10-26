@@ -12,10 +12,14 @@
 			<div class="firstDesktop"></div>
 		</div>
 		<template class="template-icon">
-			<img class="icon" src="./Icon.png"/>
+			<img class="icon" src="./icon.png"/>
 		</template>
+		<template class="template-folder">
+			<img class="icon" src="./folder.png"/>
+		</template>
+
 		<script>
-			const Desktop=new desktop(document.querySelector('.firstDesktop'));
+			const Desktop=new desktop(document.querySelector('.firstDesktop'),3,4);
 		</script>
 	</body>
 </html>
