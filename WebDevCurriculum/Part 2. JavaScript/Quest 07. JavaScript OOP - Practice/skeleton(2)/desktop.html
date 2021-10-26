@@ -10,6 +10,7 @@
 	<body>
 		<div class="monitor"> 
 			<div class="firstDesktop"></div>
+			<div class="secondDesktop"></div>
 		</div>
 		<template class="template-icon">
 			<img class="icon" src="./icon.png"/>
@@ -18,8 +19,25 @@
 			<img class="icon" src="./folder.png"/>
 		</template>
 
+		<template class="template-ChangeSize">
+			<button class="changeBT">아이콘 크기 변경</button>
+			<button class="changeIcon">아이콘 이미지 변경</button>
+		</template>
+
+		<template class="template-window">
+			<div class="window">
+				<div class="top">
+					<div class="name">Folder</div>
+					<div class="xbox"></div>
+				</div>
+				<div class="body"></div>
+			</div>
+		</template>
+		
 		<script>
-			const Desktop=new desktop(document.querySelector('.firstDesktop'),3,4);
+			const Desktop1=new desktop(document.querySelector('.firstDesktop'),3,4);
+			const Desktop2=new desktop(document.querySelector('.secondDesktop'),5,2);
+
 		</script>
 	</body>
 </html>

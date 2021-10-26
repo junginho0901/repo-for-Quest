@@ -56,3 +56,11 @@ class Folder{
         this.#dom = tmpl.querySelector('.icon');
     }
 }
+
+class Window{
+    #dom
+    constructor()
+    {
+        
+    }
+}

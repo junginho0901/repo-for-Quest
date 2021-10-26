@@ -1,16 +1,27 @@
 .firstDesktop{
-    width:100%;
-    height:100%;
-    background-color: aqua;
-    
+    width:50%;
+    height:100vh;;
+  
+    background-image: url("./background.jpg");
+    background-size: cover;
+    border: 1px solid black;
+   
+}
+.secondDesktop{
+    width:50%;
+    height:100vh;;
+    background-image: url("./background.jpg");
+    background-size: cover;
+    border: 1px solid black;
+
 }
 .icon{
     width: 80px;
     height: 80px;
 }
 .monitor{
-    width:100%;
-    height:100%;
+    display: flex;
+	justify-content: flex-start;
 }
 html,body{
     width:100%;
