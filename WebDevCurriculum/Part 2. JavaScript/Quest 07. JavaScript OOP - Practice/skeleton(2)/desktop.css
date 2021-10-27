@@ -58,3 +58,13 @@ html,body{
     background-color: red;
     right: 0;
 }
+.changeBT{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.changeIcon{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
