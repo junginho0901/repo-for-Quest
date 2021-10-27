@@ -1,13 +1,14 @@
 .firstDesktop{
+    position: relative;
     width:50%;
     height:100vh;;
-  
     background-image: url("./background.jpg");
     background-size: cover;
     border: 1px solid black;
    
 }
 .secondDesktop{
+    position: relative;
     width:50%;
     height:100vh;;
     background-image: url("./background.jpg");

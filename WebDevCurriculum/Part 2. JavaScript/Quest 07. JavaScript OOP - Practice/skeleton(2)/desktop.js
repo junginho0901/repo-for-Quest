@@ -17,6 +17,7 @@ class desktop{
             this.folder[i]=new Folder();
             this.makeFolder(this.folder[i]);
         }
+
     }
 
     makeIcon(icon){
@@ -39,8 +40,8 @@ class Icon{
         return this.#dom;
     }
     prepareIcon(){
-        const t = document.querySelector('.template-icon');     // template DOM Select
-        const tmpl = document.importNode(t.content, true);         // template 활성화 및 포함
+        const t = document.querySelector('.template-icon');    
+        const tmpl = document.importNode(t.content, true);    
         this.#dom = tmpl.querySelector('.icon');
     }
 }
@@ -59,8 +60,8 @@ class Folder{
         return this.#dom;
     }
     prepareFolder(){
-        const t = document.querySelector('.template-folder');     // template DOM Select
-        const tmpl = document.importNode(t.content, true);         // template 활성화 및 포함
+        const t = document.querySelector('.template-folder');     
+        const tmpl = document.importNode(t.content, true);        
         this.#dom = tmpl.querySelector('.icon');
     }
     openWindow(){
@@ -80,10 +81,25 @@ class Window{
         return this.#dom;
     }
     preapareWindow(){
-        const t = document.querySelector('.template-window');     // template DOM Select
-        const tmpl = document.importNode(t.content, true);         // template 활성화 및 포함
+        const t = document.querySelector('.template-window');    
+        const tmpl = document.importNode(t.content, true);        
         this.#dom = tmpl.querySelector('.window');
     }
     
 }
 
+class Drag{
+    #dom
+    constructor(dom){
+        this.#dom=dom
+        this.drag();
+    }
+    drag(){
+        this.#dom.addEventListener('mousedown',()=>
+        {this.#dom.addEventListener('keydown',()=>
+        {alert('asdas'); })
+      
+    })
+   
+    }
+}
