@@ -76,6 +76,7 @@ class Window{
     constructor()
     {
         this.preapareWindow();
+        this.clickXbox();
     }
     getWindowDom(){
         return this.#dom;
@@ -85,21 +86,18 @@ class Window{
         const tmpl = document.importNode(t.content, true);        
         this.#dom = tmpl.querySelector('.window');
     }
-    
+    clickXbox(){
+        const x=this.#dom.querySelector('.xbox');
+        x.addEventListener('click',()=>{this.#dom.remove()})
+    }
 }
 
 class Drag{
     #dom
     constructor(dom){
         this.#dom=dom
-        this.drag();
+
     }
     drag(){
-        this.#dom.addEventListener('mousedown',()=>
-        {this.#dom.addEventListener('keydown',()=>
-        {alert('asdas'); })
-      
-    })
-   
     }
 }
