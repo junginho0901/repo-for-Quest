@@ -18,7 +18,7 @@ class desktop {
             this.makeFolder(this.folder[i]);
         }
         this.makeButtons();
-        this.changeICon();
+        this.changeIcon(dom);
     }
 
     makeIcon(icon) {
@@ -35,15 +35,22 @@ class desktop {
         this.#dom.appendChild(this.imgbutton);
     }
 
-    changeICon() {
+    changeIcon(dom) {
         const a = new changeIcon();
         let width
         let height
+        let img
         this.sizebutton.addEventListener('click', () => {
             width = prompt('가로px을 입력하세요.예시)50px이라면 50');
             height = prompt('세로px을 입력하세요.예시)50px이라면 50');
-            if (isNaN(Number(width)) == true && isNaN(Number(height)) == true) { alert("다시 입력해주십시오.") }
-            else { a.changeSize(width, height) }
+            if (isNaN(Number(width)) == true && isNaN(Number(height)) == true) { alert("입력값이 올바르지 않습니다.") }
+            else { a.changeSize(dom,width, height) }
+        }
+        )
+
+        this.imgbutton.addEventListener('click', () => {
+            img = prompt('이미지 파일을 입력하세요(같은폴더 내에서만 찾기가 가능합니다.)');
+            a.changeImg(dom,img); 
         }
         )
     }
@@ -110,17 +117,6 @@ class Window {
     }
 }
 
-class Drag {
-    #dom
-    constructor(dom) {
-        this.#dom = dom
-
-    }
-    drag() {
-    }
-
-
-}
 
 class Buttons {
     #sizeButtonDom
@@ -144,14 +140,21 @@ class Buttons {
 
 class changeIcon {
 
-    constructor() {
-
-    }
-    changeSize(Width, Height) {
-        for (let i = 0; i < document.querySelectorAll('.icon').length; i++) {
-            document.querySelectorAll('.icon')[i].style.width = Width + 'px';
-            document.querySelectorAll('.icon')[i].style.height = Height + 'px';
+    changeSize(dom,Width, Height) {
+        for (let i = 0; i < dom.querySelectorAll('.icon').length; i++) {
+            dom.querySelectorAll('.icon')[i].style.width = Width + 'px';
+            dom.querySelectorAll('.icon')[i].style.height = Height + 'px';
         }
     }
 
+    changeImg(dom,img){
+        
+        for(let i =0;i<dom.querySelectorAll('.only-Icon').length;i++)
+        {
+            dom.querySelectorAll('.only-Icon')[i].src = img;
+        }
+
+    }
 }
+
+
