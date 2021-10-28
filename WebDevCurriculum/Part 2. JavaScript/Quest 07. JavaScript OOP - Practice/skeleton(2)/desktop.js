@@ -10,12 +10,13 @@ class desktop {
         this.icon = []
         this.folder = []
         for (let i = 0; i < Icons; i++) {
-            this.icon[i] = new Icon();
+            this.icon[i] = new Icon(i+1);
             this.makeIcon(this.icon[i]);
         }
         for (let i = 0; i < Folders; i++) {
-            this.folder[i] = new Folder();
+            this.folder[i] = new Folder(i+1);
             this.makeFolder(this.folder[i]);
+
         }
         this.makeButtons();
         this.changeIcon(dom);
@@ -59,7 +60,9 @@ class desktop {
 
 class Icon {
     #dom
-    constructor() {
+    #order
+    constructor(i) {
+        this.#order=i;
         this.prepareIcon();
     }
     getIconDom() {
@@ -69,17 +72,20 @@ class Icon {
         const t = document.querySelector('.template-icon');
         const tmpl = document.importNode(t.content, true);
         this.#dom = tmpl.querySelector('.icon');
+        this.#dom.id='icon'+this.#order;
+        console.log(this.#dom);
     }
 }
 class Folder {
     #dom
     window
-
-    constructor() {
-
+    #order
+    constructor(i) {
+        this.#order=i;
         this.prepareFolder();
 
         this.window = new Window();
+        for(let i=0;i<dom.querySelectorAll('.only-Folder').length;i++)
         this.openWindow();
     }
     getFolderDom() {
@@ -89,10 +95,13 @@ class Folder {
         const t = document.querySelector('.template-folder');
         const tmpl = document.importNode(t.content, true);
         this.#dom = tmpl.querySelector('.icon');
+        this.#dom.id='icon'+this.#order;
+        console.log(this.#dom);
     }
-    openWindow() {
+    openWindow(i) {
         this.#dom.addEventListener('dblclick', () => {
             this.#dom.after(this.window.getWindowDom());
+            this.window.getWindowDom().querySelector('.name').innerText += i;
         })
     }
 }
