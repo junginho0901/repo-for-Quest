@@ -85,7 +85,6 @@ class Folder {
         this.prepareFolder();
 
         this.window = new Window();
-        for(let i=0;i<dom.querySelectorAll('.only-Folder').length;i++)
         this.openWindow();
     }
     getFolderDom() {
@@ -98,10 +97,9 @@ class Folder {
         this.#dom.id='icon'+this.#order;
         console.log(this.#dom);
     }
-    openWindow(i) {
+    openWindow() {
         this.#dom.addEventListener('dblclick', () => {
             this.#dom.after(this.window.getWindowDom());
-            this.window.getWindowDom().querySelector('.name').innerText += i;
         })
     }
 }

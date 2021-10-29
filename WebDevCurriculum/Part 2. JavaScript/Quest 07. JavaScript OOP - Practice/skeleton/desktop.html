@@ -5,41 +5,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie-edge">
 		<link rel="stylesheet" href="./desktop.css">
-		<link rel="stylesheet" href="./myDesktop.css">
 		<script src="./desktop.js"></script>
 	</head>
 	<body>
-		<div class="monitor"> 
-			<div class="firstDesktop"></div>
-			<div class="secondDesktop"></div>
-		</div>
-		<template class="template-icon">
-			<img class="icon" src="img/icon.png"/>
-		</template>
-		<template class="template-folder">
-			<img class="icon" src="img/folder.png"/>
-		</template>
-
-		<template class="template-ChangeSize">
-			<button class="changeBT">아이콘 크기 변경</button>
-			<button class="changeIcon">아이콘 이미지 변경</button>
-		</template>
-
-		<template class="template-window">
-			<div class="window">
-				<div class="top">
-					<div class="name">Folder</div>
-					<div class="xbox"></div>
-				</div>
-				<div class="body"></div>
-			</div>
-		</template>
+		
+	<div class ='desktop'>
+		<img class="icon"  src="./icon.png"/>
+	</div>
+		
+	
+	
 
 		<script src="desktop.js"></script>
 		<script>
-			const firstDesktop = new Desktop(document.querySelector('.firstDesktop'), { folder: 4, icon: 3 });
-			const secondDesktop = new Desktop(document.querySelector('.secondDesktop'), { folder: 3, icon: 4 });
-			
+		
 		</script>
 	</body>
 </html>
