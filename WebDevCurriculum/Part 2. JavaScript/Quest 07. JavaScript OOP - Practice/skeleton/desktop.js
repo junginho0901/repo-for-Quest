@@ -5,26 +5,27 @@ class Drag{
     {
         this.#dom=dom;
         this.addDragAndDrop();
+        console.log(window.getComputedStyle(this.#dom).top,window.getComputedStyle(this.#dom).left)
     }
     addDragAndDrop() {
         // window Drag || Icon Drag
             this.#select = this.#dom;
 
         const mouseDownEvent = this.#dom.addEventListener('mousedown', e => {
-            console.log("마우스 내려감")
+          
             let pushed = true;
             let mouseCoord = {
                 x: e.clientX,
                 y: e.clientY
             };
-            console.log(this.#dom.style.left)
-            console.log(this.#dom.style.top)
+            
+          
             const mouseMoveEvent = document.addEventListener('mousemove', e => {
                 if (pushed) {
                   
                     const currCoord = {
-                        x: Number(this.#dom.style.left.replace('px', '')),
-                        y: Number(this.#dom.style.top.replace('px', ''))
+                        x: Number(window.getComputedStyle(this.#dom).left.replace('px', '')),
+                        y: Number(window.getComputedStyle(this.#dom).top.replace('px', ''))
                     };
                    
                    
