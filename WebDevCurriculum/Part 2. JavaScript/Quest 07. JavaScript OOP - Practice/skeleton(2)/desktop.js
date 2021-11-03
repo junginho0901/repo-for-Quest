@@ -17,6 +17,7 @@ class desktop {
         for (let i = 0; i < Folders; i++) {
             this.folder[i] = new Folder(i+1);
             this.makeFolder(this.folder[i]);
+           
 
         }
         this.makeButtons();
@@ -67,6 +68,7 @@ class Icon {
         this.#order=i;
         this.prepareIcon();
         this.drag=new Drag(this.getIconDom())
+       
     }
     getIconDom() {
         return this.#dom;
@@ -77,6 +79,7 @@ class Icon {
         this.#dom = tmpl.querySelector('.icon');
         this.#dom.id='icon'+this.#order;
         console.log(this.#dom);
+        
     }
 }
 class Folder {
